@@ -61,6 +61,23 @@ Code snippet
 // Total Revenue Calculation
 Revenue = SUM('Gold report customers'[Total_sales])
 
+---
+
+## Dashboard Overview
+
+### Page 1: High-Level Market View
+
+
+<img width="891" height="494" alt="1" src="https://github.com/user-attachments/assets/ca961594-db84-49be-9b72-be02473c905f" />
+
+
+This dashboard is a high-level Customer Insights Executive Report designed to translate complex retail data into actionable business intelligence.
+It provides a 360-degree view of sales performance, demographic trends, and customer loyalty patterns.
+
+This page answers the **"What"** and the **"Who"** of the business. It allows for rapid decision-making by showing where the money is coming from and which demographics
+represent the most stable market share. It transforms raw transactional data into a high-level narrative about market health and customer loyalty.
+
+
 ## Conclusion 
 
 This project successfully transformed raw customer financial data into an interactive executive dashboard using a comprehensive data strategy with SQL and Power BI.
