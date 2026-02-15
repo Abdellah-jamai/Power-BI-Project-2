@@ -33,6 +33,7 @@ The goal was to transform raw sales data into actionable business segments insig
 ### Example: Calculating Revenue & Customer Metrics
 
 SELECT 
+
     COUNT(DISTINCT Customer_key) AS Total_Customers,
     SUM(Total_sales) AS Total_Revenue,
     ROUND(AVG(Total_sales), 2) AS Avg_Order_Value
@@ -43,23 +44,14 @@ FROM gold_report_customers;
 SELECT 
 
     CASE 
-    
         WHEN age >= 50 THEN '50 and Above'
-        
         WHEN age BETWEEN 40 AND 49 THEN '40-49'
-        
         WHEN age BETWEEN 30 AND 39 THEN '30-39'
-        
         ELSE 'Under 30'
-        
     END AS Age_Group,
-    
     SUM(Total_sales) AS Revenue_By_Group
-    
 FROM gold_report_customers
-
 GROUP BY 1
-
 ORDER BY Revenue_By_Group DESC;
 
 ## 📈 Technical DAX Highlights
