@@ -41,15 +41,25 @@ FROM gold_report_customers;
 ### Example: Segmenting Customers by Age Group
 
 SELECT 
+
     CASE 
+    
         WHEN age >= 50 THEN '50 and Above'
+        
         WHEN age BETWEEN 40 AND 49 THEN '40-49'
+        
         WHEN age BETWEEN 30 AND 39 THEN '30-39'
+        
         ELSE 'Under 30'
+        
     END AS Age_Group,
+    
     SUM(Total_sales) AS Revenue_By_Group
+    
 FROM gold_report_customers
+
 GROUP BY 1
+
 ORDER BY Revenue_By_Group DESC;
 
 ## 📈 Technical DAX Highlights
